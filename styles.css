@@ -39,7 +39,10 @@ p {
 .container .content {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   max-width: 600px;
+  margin: 0 1rem;
 }
 .container .content .container {
   min-height: auto;
@@ -53,7 +56,7 @@ p {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   margin: 1rem;
   position: relative;
 }
@@ -79,7 +82,7 @@ p {
   font-size: 1.7rem;
   color: cornflowerblue;
   line-height: 1;
-  padding: 0.7rem 1.8rem;
+  padding: 0.7rem 2.3rem;
   border: 1px solid cornflowerblue;
   border-radius: 2rem;
 }
@@ -101,7 +104,7 @@ p {
   width: 100%;
   height: 5px;
   background: red;
-  transition: background 0.2s ease-in;
+  transition: background 0.5s ease-in;
 }
 .container .content .container:before {
   content: "";
@@ -112,7 +115,7 @@ p {
   width: 100%;
   height: 5px;
   background: red;
-  transition: background 0.2s ease-in;
+  transition: background 0.5s ease-in;
 }
 
 @media all and (max-width: 678px) {
@@ -131,11 +134,11 @@ p {
     background: transparent;
   }
 }
-@media all and (max-width: 678px) {
+@media all and (max-width: 425px) {
   html {
     font-size: 52%;
   }
   .container .content {
     max-width: 320px;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
