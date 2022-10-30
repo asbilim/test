@@ -133,7 +133,7 @@ p {
 }
 @media all and (max-width: 678px) {
   html {
-    font-size: 56%;
+    font-size: 52%;
   }
   .container .content {
     max-width: 350px;
