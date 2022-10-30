@@ -35,7 +35,7 @@ p{
     align-items: center;
     justify-content: center;
     margin: 1rem 1rem;
-    .content{
+    &__content{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -54,7 +54,7 @@ p{
             height: min-content;
             padding: 1rem 1.5rem;
             margin: 1rem;
-            .title{
+            &__title{
                 h3{
                     font-size: 3.5rem;
                     color: red;
@@ -63,9 +63,9 @@ p{
             img{
                 max-width: 300px;
                 max-height:300px ;
-                object-fit: cover;
+                object-fit: contain;
             }
-            .description{
+            &__description{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -85,7 +85,7 @@ p{
                     }
                 }
             }
-            .name{
+            &__name{
                 h2{
                     font-size: 2.8rem;
                     color: #444;
@@ -126,8 +126,13 @@ p{
     }
     .container{
 
-        .content{
+        &__content{
             max-width: 410px;
+            img{
+                max-width: 200px;
+                max-height:200px ;
+                object-fit: contain;
+            }
             .container{
                 &:after{
                     content:'';
@@ -147,8 +152,12 @@ p{
         font-size: 52%;
     }
     .container{
-
-        .content{
+        img{
+            max-width: 90px;
+            max-height:90px ;
+            object-fit: contain;
+        }
+        &__content{
             max-width: 320px;
         }
     }

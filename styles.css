@@ -36,7 +36,7 @@ p {
   justify-content: center;
   margin: 1rem 1rem;
 }
-.container .content {
+.container__content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +44,7 @@ p {
   max-width: 600px;
   margin: 0 1rem;
 }
-.container .content .container {
+.container__content .container {
   min-height: auto;
   width: 100%;
   display: flex;
@@ -60,17 +60,17 @@ p {
   margin: 1rem;
   position: relative;
 }
-.container .content .container .title h3 {
+.container__content .container__title h3 {
   font-size: 3.5rem;
   color: red;
 }
-.container .content .container img {
+.container__content .container img {
   max-width: 300px;
   max-height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-.container .content .container .description {
+.container__content .container__description {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,7 +78,7 @@ p {
   width: 100%;
   gap: 2rem;
 }
-.container .content .container .description a {
+.container__content .container__description a {
   font-size: 1.7rem;
   color: cornflowerblue;
   line-height: 1;
@@ -86,16 +86,16 @@ p {
   border: 1px solid cornflowerblue;
   border-radius: 2rem;
 }
-.container .content .container .description a:hover {
+.container__content .container__description a:hover {
   color: white;
   background: cornflowerblue;
 }
-.container .content .container .name h2 {
+.container__content .container__name h2 {
   font-size: 2.8rem;
   color: #444;
   margin: 0 1rem;
 }
-.container .content .container:after {
+.container__content .container:after {
   content: "";
   display: block;
   position: absolute;
@@ -106,7 +106,7 @@ p {
   background: red;
   transition: background 0.5s ease-in;
 }
-.container .content .container:before {
+.container__content .container:before {
   content: "";
   display: block;
   position: absolute;
@@ -122,14 +122,20 @@ p {
   html {
     font-size: 58%;
   }
-  .container .content {
+  .container__content {
     max-width: 410px;
   }
-  .container .content .container:after {
+  .container__content img {
+    max-width: 200px;
+    max-height: 200px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .container__content .container:after {
     content: "";
     background: transparent;
   }
-  .container .content .container:before {
+  .container__content .container:before {
     content: "";
     background: transparent;
   }
@@ -138,7 +144,13 @@ p {
   html {
     font-size: 52%;
   }
-  .container .content {
+  .container img {
+    max-width: 90px;
+    max-height: 90px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .container__content {
     max-width: 320px;
   }
 }/*# sourceMappingURL=styles.css.map */
