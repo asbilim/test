@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="modal">
+        <div class="modal__container">
+            <div class="image">
+                <img src="qr.png" alt="">
+            </div>
+            <div class="cancel">
+                <a href="#" class="show" id="close">Close</a>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="container__content">
             <div class="container">
@@ -23,10 +33,18 @@
                 <div class="container__description">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque maxime quos quibusdam aliquam, laudantium error laborum doloribus omnis ipsa dolore tenetur qui voluptatibus expedita ea? Molestiae eveniet fugit adipisci voluptate.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quidem pariatur eum alias repellendus, reiciendis ipsam soluta id odit. Vel non molestiae culpa laudantium porro aliquam voluptatem, ullam cum inventore.</p>
-                    <a href="#" class="">CANCEL</a>
+                    <a href="#" class="show" id="show">Show</a>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script>
+    document.getElementById("show").addEventListener('click',()=>{
+        document.querySelectorAll('.modal')[0].style.display = "flex";
+    })
+    document.getElementById("close").addEventListener('click',()=>{
+        document.querySelectorAll('.modal')[0].style.display = "none";
+    })
+</script>
 </html>
